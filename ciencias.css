@@ -1,0 +1,165 @@
+
+/* PALETA DE COLORES A.P.A. */
+:root {
+    --azul-noche: #1E2A3A;
+    --azul-petroleo: #2F4A4A;
+    --verde-bosque: #2C3A2B;
+    --marron-corteza: #5B4636;
+    --beige-arena: #D8CBB6;
+    --crema: #F1EADF;
+    --gris-musgo: #8B8E7E;
+    --negro-carbon: #1C1C1A;
+    --dorado: #B59A68;
+    --verde-musgo: #8B9A7D;
+}
+
+/* CONFIGURACIÓN GENERAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--crema);
+    color: var(--negro-carbon);
+    line-height: 1.7;
+}
+
+/* ENCABEZADO */
+header {
+    background-color: var(--azul-noche);
+    color: var(--crema);
+    text-align: center;
+    padding: 35px 20px;
+    border-bottom: 5px solid var(--dorado);
+}
+
+header h1 {
+    margin: 0;
+    color: var(--dorado);
+    font-size: 2.2em;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.05em;
+}
+
+/* NAVEGACIÓN */
+nav {
+    background-color: var(--azul-petroleo);
+    padding: 16px 10px;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    color: var(--crema);
+    text-decoration: none;
+    margin: 5px 9px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--dorado);
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
+    width: 90%;
+    max-width: 1050px;
+    margin: 35px auto;
+}
+
+/* SECCIONES */
+section {
+    background-color: #FFFFFF;
+    margin-bottom: 25px;
+    padding: 25px 30px;
+    border-left: 6px solid var(--verde-bosque);
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(30, 42, 58, 0.08);
+}
+
+section h2 {
+    color: var(--verde-bosque);
+    border-bottom: 2px solid var(--dorado);
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+section p {
+    text-align: justify;
+}
+
+/* TEXTOS IMPORTANTES */
+section strong {
+    color: var(--verde-bosque);
+}
+
+/* ECUACIÓN DE LA FOTOSÍNTESIS */
+section:nth-of-type(3) p:nth-of-type(2) {
+    background-color: var(--beige-arena);
+    color: var(--verde-bosque);
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* LISTAS */
+ul {
+    padding-left: 28px;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+li::marker {
+    color: var(--verde-bosque);
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: var(--azul-noche);
+    color: var(--crema);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 4px solid var(--dorado);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* DISEÑO RESPONSIVO */
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 1.7em;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,151 @@
+
+/* PALETA DE COLORES A.P.A. */
+
+:root {
+    --azul-noche: #1E2A3A;
+    --azul-petroleo: #2F4A4A;
+    --verde-bosque: #2C3A2B;
+    --marron-corteza: #5B4636;
+    --beige-arena: #D8CBB6;
+    --crema: #F1EADF;
+    --gris-musgo: #8B8E7E;
+    --negro-carbon: #1C1C1A;
+    --dorado: #B59A68;
+    --verde-musgo: #8B9A7D;
+    --cafe: #A67C52;
+    --azul-claro: #8A9BA8;
+    --azul-acero: #4A5E6E;
+    --azul-zafiro: #1F3A5F;
+}
+
+/* CONFIGURACIÓN GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--crema);
+    color: var(--negro-carbon);
+}
+
+/* ENCABEZADO */
+
+header {
+    background-color: var(--azul-noche);
+    color: var(--crema);
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    color: var(--dorado);
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    display: inline-block;
+    color: var(--crema);
+    text-decoration: none;
+    margin: 8px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: var(--dorado);
+}
+
+/* SELECTOR */
+
+select {
+    padding: 10px;
+    border: 1px solid var(--dorado);
+    border-radius: 5px;
+    background-color: var(--crema);
+    color: var(--azul-noche);
+}
+
+/* CONTENIDO */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.panel {
+    background-color: #FFFFFF;
+    border-left: 5px solid var(--verde-musgo);
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.panel h2 {
+    color: var(--verde-bosque);
+}
+
+.panel h3 {
+    color: var(--azul-petroleo);
+}
+
+/* ACTIVIDADES */
+
+.actividades {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.actividades div {
+    background-color: var(--beige-arena);
+    padding: 18px;
+    border-left: 4px solid var(--dorado);
+    border-radius: 5px;
+}
+
+.actividades h3 {
+    color: var(--verde-bosque);
+    font-size: 16px;
+}
+
+/* RAZONES */
+
+.razones {
+    background-color: var(--beige-arena);
+}
+
+.razones li {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    background-color: var(--azul-noche);
+    color: var(--crema);
+    text-align: center;
+    padding: 15px;
+}
+
+/* ADAPTACIÓN A CELULARES */
+
+@media (max-width: 650px) {
+
+    .actividades {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: block;
+        margin: 12px;
+    }
+
+}

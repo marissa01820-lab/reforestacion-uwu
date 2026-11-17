@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactanos.css">
+    <title>Contáctanos | A.P.A.</title>
+</head>
+<body style="background-image: url('imagenes de fondo del html/contactanos.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed;">
+>
+    <header>
+        <h1>A.P.A.</h1>
+        <nav>
+            <a href="pagina principal.html">INICIO</a>
+            <a href="pagina de la investigación.html">INVESTIGACIÓN</a>
+            <a href="formulario.html">CONTÁCTANOS</a>
+            <a href="calculadora de reforestacion.php">CALCULADORA DE REFORESTACIÓN</a>
+            <a href="pagina color.html">pagina de teoria del</a>
+        </nav>
+
+        <h3>revisa nuestros trabajos en distintas materias</h3>
+        <select name="materias" id="materias"
+     onchange="if(this.value) window.location.href=this.value">
+
+     <option value="">Selecciona una materia</option>
+     <option value="pagina lenguaje.html">Español</option>
+     <option value="pagina ingles.html">Inglés</option>
+     <option value="pagina matematicas.html">Matemáticas</option>
+     <option value="pagina educacion fisica.html">Educación física</option>
+     </select>
+   </header>
+ 
+    
+
+
+    <main>
+
+        <h1>CONTÁCTANOS</h1>
+
+        <section>
+            <h2>formulario de contacto</h2>
+
+            <form action="#" method="post">
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Dirección de correo electrónico</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="mensaje">Deja un mensaje</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Asociación de Protección Ambiental A.P.A. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
